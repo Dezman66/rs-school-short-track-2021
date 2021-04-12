@@ -1,15 +1,16 @@
 /**
  * Given an email address, return it's domain.
  *
- * @param {String} email
+ * @param {String} _email
  * @return {String}
  *
  * @example
  * For the input 'prettyandsimple@example.com', the output should be 'example.com'
  *
  */
-function getEmailDomain(/* email */) {
-  throw new Error('Not implemented');
+function getEmailDomain(_email) {
+  const dom = _email.split('@');
+  return dom[dom.length - 1];
 }
 
 module.exports = getEmailDomain;
